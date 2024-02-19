@@ -1,17 +1,19 @@
-# Выполнено ДЗ №2
- - [ ] Закрепляем знания по Git, работаем в своих репозиториях
+# Выполнено ДЗ №3
+ - [ ] Знакомство с облачной инфраструктурой
+ - [ ] Yandex.Cloud
 
 ## В процессе сделано:
- - PULL_REQUEST_TEMPLATE
- - pre-commit hooks {end-of-file-fixer, trailing-whitespace}
- - GitHub actions configured
+ - Создание учетной записи в Yandex.Cloud
+ - Создание в веб-интерфейсе инстансов ВМ и подключение к ним по SSH
+ - Предложен вариант с подключением к внутреннему хосту через бастион-хост в одну команду SSH
+ - Подключение к VPC через VPN
 
 ## Как запустить проект:
  - N/A
 
 ## Как проверить работоспособность:
- - Перейти по ссылке https://github.com/Otus-DevOps-2024-01/YBakalenko_infra
- - Аппрувить PR
+ - Аппрувить PR Otus-DevOps-2024-01/YBakalenko_infra
+ - Смотри видео в homework-chat OTUS
 
 ## PR checklist
  - [+] Выставил label с номером домашнего задания
