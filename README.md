@@ -1,21 +1,24 @@
 # YBakalenko_infra
 
-In order to SSH an internal VPC machine someinternalhost with command like
-"ssh someinternalhost" from a local machine please follow the below steps:
-1. Modify your local SSH configuration file ~/.ssh/config:
-   nano ~/.ssh/config
-2. Add the following lines to the configuration file:
+The full reddit VM image was built using Packer framework utiliing the below features:
+1. Packer JSON-template (see packer/ubuntu16.json) with priovisioners based on Bash scripts
+   installing a Ruby environment and Mongo database
+2. Yandex cloud service account has been used for VM deployment and image build process
+   Packer interaction with YC provider
+3. Packer JSON template enhancement was done to introduce user-defined parameters from
+   external file (see packer/variables.json) or CLI parameters
 
-    Host bastionhost
-            HostName <bastionhost_public_IP>
-            User appuser
-            Port 22
+   - variables.json file gist:
+   {
+        "variables": {
+                "my_folder_id": "myfolder_id",
+                "my_service_account_key_file": "myserviceaccount_json_file_path",
+                "my_source_image_family": "os_image_family"
+        }
+   }
 
-    Host someinternalhost
-            HostName <someinternalhost_internal_IP>
-            User appuser
-            Port 22
-            ProxyJump bastionhost
+   - shell Packer build command:
+   packer build -var-file=../packer/variables.json ../packer/ubuntu16.json
 
-bastionhost_public_IP = 51.250.66.22
-someinternalhost_internal_IP = 10.128.0.24s
+4. A full reddit application baked VM image was prepared using a additional provisioning script
+   (packer/files/install_reddit.sh)
