@@ -12,6 +12,7 @@
             "use_ipv4_nat": "true"
         }
     ],
+
     "provisioners": [
         {
             "type": "shell",
