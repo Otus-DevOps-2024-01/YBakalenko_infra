@@ -1,7 +1,6 @@
+
 {
-    "variables": {
-        "my_folder_id": "myfolder_id",
-        "my_service_account_key_file": "myserviceaccount_json_file_path",
-        "my_source_image_family": "os_image_family"
-    }
+    "my_sa_key_file": "key.json",
+    "my_folder_id": "MyFolderId",
+    "my_source_image_family": "OsImageFamily"
 }
