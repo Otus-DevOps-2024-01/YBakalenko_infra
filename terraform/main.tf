@@ -1,10 +1,11 @@
 terraform {
+  required_version = ">= 1.0"
   required_providers {
     yandex = {
       source = "yandex-cloud/yandex"
+      version = "0.13"
     }
   }
-  required_version = ">= 0.13"
 }
 
 provider "yandex" {
@@ -37,7 +38,7 @@ resource "yandex_compute_instance" "app" {
 
   connection {
     type  = "ssh"
-    host  = yandex_compute_instance.app.network_interface.0.nat_ip_address
+    host  = yandex_compute_instance.app.network_interface[0].nat_ip_address
     user  = "ubuntu"
     agent = false
     # путь до приватного ключа
