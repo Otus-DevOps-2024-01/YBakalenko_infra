@@ -13,8 +13,8 @@ FEATURES:
 * kafka: added `subnet_ids` field for update method in `resource_yandex_mdb_kafka_cluster`
 * **New Resource:** `yandex_mdb_mongodb_database`
 * **New Resource:** `yandex_mdb_mongodb_user`
-* **New Resource:** `yandex_organizationmanager_os_login_settings`
-* **New Resource:** `yandex_organizationmanager_user_ssh_key`
+* **New Resource:** `yandex_organizationmanager_os_login_settings` 
+* **New Resource:** `yandex_organizationmanager_user_ssh_key` 
 * **New Data Source:** `yandex_mdb_mongodb_database`
 * **New Data Source:** `yandex_mdb_mongodb_user`
 * **New Data Source:** `yandex_organizationmanager_os_login_settings`
@@ -102,7 +102,7 @@ BUG FIXES:
 * clickhouse: updating only the changed user settings
 * alb: fix bug leading to panic when `log_options` block is empty
 * storage: fix bug not allowing to remove grants and acl by removing `grant` and `acl` fields
-* certificate-manager: `yandex_cm_certificate` resource now handles the case when the service does not provide challenges of the required type
+* certificate-manager: `yandex_cm_certificate` resource now handles the case when the service does not provide challenges of the required type 
 
 ## 0.101.0 (October 31, 2023)
 
@@ -139,7 +139,7 @@ ENHANCEMENTS:
 FEATURES:
 
 * clickhouse: added `remote_filesystem_read_method`, `max_read_buffer_size`, `insert_keeper_max_retries`, `max_temporary_data_on_disk_size_for_user`, `max_temporary_data_on_disk_size_for_query`, `max_parser_depth`, `memory_overcommit_ratio_denominator`, `memory_overcommit_ratio_denominator_for_user`, `memory_usage_overcommit_max_wait_microseconds` for user settings, `geobase_enabled`, `background_merges_mutations_concurrency_ratio` for server configuration, `max_avg_part_size_for_too_many_parts`, `min_age_to_force_merge_seconds`, `min_age_to_force_merge_on_partition_only`, `merge_selecting_sleep_ms` for merge tree configuration, `enable_ssl_certificate_verification`, `max_poll_interval_ms`, `session_timeout_ms` for kafka_topic configuration, `level` for compression configuration, `prefer_not_to_merge` for cloud storage configratuion
-* clickhouse: fix update merge_tree settings
+* clickhouse: fix update merge_tree settings 
 * hadoop: support `initialization_action` section
 * serverless: add `async_invocation` attribute in `yandex_function` resources and data sources
 * greenplum: add Greenplum 6.25 support
@@ -282,7 +282,7 @@ FEATURES:
 * k8s: add `audit_enabled` field to `master_logging` attribute in `cluster` resource and data source
 * clickhouse: minor refactoring of clickhouse tests
 * **New Resource** `yandex_lockbox_secret_iam_binding`
-* All supported subjects specified in docs for `*_iam_member`, `*_iam_binding` and other iam access policy resources
+* All supported subjects specified in docs for `*_iam_member`, `*_iam_binding` and other iam access policy resources 
 * cdn: added support to set custom headers in requests to origin in `static_request_headers`
 
 BUG FIXES:
@@ -334,7 +334,7 @@ FEATURES:
 * postgresql: add `deletion_protection` attribute to `yandex_mdb_postgresql_user` and `yandex_mdb_postgresql_database` resources
 
 BUG FIXES:
-* datatransfer: fixed the setting of `source_id` and `target_id` on the transfer importing
+* datatransfer: fixed the setting of `source_id` and `target_id` on the transfer importing 
 * yandex message queue: fixed invalid VisibilityTimeout in queue settings when `visibility_timeout_seconds` attribute was set to `0`
 
 ## 0.88.0 (March 23, 2023)
@@ -458,7 +458,7 @@ BUG FIXES:
 * greenplum: add expanding greenplum cluster in a case of changing segments host numbers, details in `resource_yandex_mdb_greenplum_cluster`
 
 ENHANCEMENTS:
-* provider: Upgrade go-sdk and go-genproto to the latest version. This is needed for ALB RBAC feature.
+* provider: Upgrade go-sdk and go-genproto to the latest version. This is needed for ALB RBAC feature. 
 * add `message_max_bytes`, `replica_fetch_max_bytes`, `ssl_cipher_suites`, `offsets_retention_minutes` attributes in `yandex_mdb_kafka_cluster` resource and data source
 * clickhouse: use version 22.8 for tests
 
