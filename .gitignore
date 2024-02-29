@@ -1,2 +1,10 @@
-.idea
-.DS_Store
+.idea/
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
+packer/variables.json
+./github/workflows/auto_assign.xml
+./github/workflows/run-test.xml
+./github/auto_assign.xml
