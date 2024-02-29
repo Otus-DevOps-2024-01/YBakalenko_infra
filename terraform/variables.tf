@@ -13,8 +13,7 @@ variable "zone" {
   type        = string
 }
 variable "public_key_path" {
-  # Описание переменной
-  description = "PubKeyFilePath"
+  description = "../.ssh/ubuntu.pub"
   type        = string
 }
 variable "image_id" {
@@ -26,10 +25,10 @@ variable "subnet_id" {
   type        = string
 }
 variable "service_account_key_file" {
-  description = "SAKeyFilePath"
+  description = "key.json"
   type        = string
 }
 variable "private_key_path" {
-  description = "PrivateKeyFilePath"
+  description = "../.ssh/ubuntu"
   type        = string
 }
