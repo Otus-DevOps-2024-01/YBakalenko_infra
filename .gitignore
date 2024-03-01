@@ -8,3 +8,4 @@ packer/variables.json
 packer/key.json
 terraform/terraform.tfvars
 terraform/.terraform/
+.DS_Store
