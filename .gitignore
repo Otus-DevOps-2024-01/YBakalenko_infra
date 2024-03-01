@@ -5,6 +5,7 @@
 *.tfvars
 .terraform/
 packer/variables.json
-./github/workflows/auto_assign.xml
-./github/workflows/run-test.xml
-./github/auto_assign.xml
+packer/key.json
+terraform/terraform.tfvars
+terraform/.terraform/
+.DS_Store
