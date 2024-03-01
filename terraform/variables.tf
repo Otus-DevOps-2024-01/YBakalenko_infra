@@ -10,7 +10,7 @@ variable "zone" {
   description = "MyZone"
   # Значение по умолчанию
   default = "ru-central1-a"
-  type        = string
+  type    = string
 }
 variable "public_key_path" {
   description = "../.ssh/ubuntu.pub"
