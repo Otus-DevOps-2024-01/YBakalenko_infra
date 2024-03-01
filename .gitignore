@@ -8,3 +8,5 @@ packer/variables.json
 packer/key.json
 terraform/terraform.tfvars
 terraform/.terraform/
+terraform/.terraform.lock.hcl
+.DS_Store
