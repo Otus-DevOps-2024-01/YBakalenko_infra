@@ -4,8 +4,6 @@
 *.tfstate.backup
 *.tfvars
 .terraform/
-packer/variables.json
-packer/key.json
 terraform/terraform.tfvars
 terraform/.terraform/
 terraform/stage/terraform.tfvars
