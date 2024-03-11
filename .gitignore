@@ -3,9 +3,11 @@
 *.tfstate.*.backup
 *.tfstate.backup
 *.tfvars
-.terraform/
+.DS_Store
 terraform/terraform.tfvars
 terraform/.terraform/
 terraform/stage/terraform.tfvars
 terraform/prod/terraform.tfvars
-.DS_Store
+ansible/inventory.json
+ansible/inventorygen.py
+ansible/inventorygen.ipynb
