@@ -10,4 +10,4 @@ terraform/stage/terraform.tfvars
 terraform/prod/terraform.tfvars
 ansible/inventory.json
 ansible/inventorygen.py
-ansible/inventorygen.ipynb
+*.retry
