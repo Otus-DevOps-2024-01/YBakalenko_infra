@@ -11,5 +11,4 @@ terraform/prod/terraform.tfvars
 ansible/inventory.json
 ansible/inventorygen.py
 *.retry
-jdauphant.nginx
 vault.key
