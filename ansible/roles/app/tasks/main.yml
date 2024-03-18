@@ -13,3 +13,7 @@
     group: ubuntu
 - name: enable puma
   systemd: name=puma enabled=yes
+# tasks file for app
+- name: Show info about the env this host belongs to
+  debug:
+    msg: "This host is in {{ env }} environment!!!"
