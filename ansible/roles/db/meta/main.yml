@@ -1,7 +1,9 @@
 galaxy_info:
-  author: your name
-  description: your role description
-  company: your company (optional)
+  role_name: db
+  namespace: galaxy_namespace
+  author: YBakalenko
+  description: role db deployment
+  company: self-employed
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
