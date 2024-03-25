@@ -1,0 +1,15 @@
+---
+driver:
+  name: vagrant
+  provider:
+    name: vmware_desktop
+platforms:
+  - name: instance
+    box: bento/ubuntu-20.04
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+    # you might want to add your own variables here based on what provisioning
+    # you are doing like:
+    # image: quay.io/centos/centos:stream8
