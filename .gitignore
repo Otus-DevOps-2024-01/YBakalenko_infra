@@ -15,6 +15,7 @@ vault.key
 jdauphant.nginx
 .vagrant/
 *.log
+!docker-1.log
 *.pyc
 .molecule
 .cache
