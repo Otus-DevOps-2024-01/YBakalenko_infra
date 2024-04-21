@@ -17,7 +17,17 @@ before_script:
 build_job:
   stage: build
   script:
-    - echo 'Building'
+    - echo 'App deploy'
+    - puma -d
+    - systemctl start puma
+    - systemctl enable puma
+  environment:
+    name: branch/$CI_COMMIT_REF_NAME
+    url: http://$CI_ENVIRONMENT_SLUG.example.com
+  only:
+    - branches
+  except:
+    - master
 
 test_unit_job:
   stage: test
