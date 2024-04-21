@@ -18,9 +18,7 @@ build_job:
   stage: build
   script:
     - echo 'App deploy'
-    - puma -d
-    - sudo systemctl start puma
-    - sudo systemctl enable puma
+    - start_app.sh &
   environment:
     name: branch/$CI_COMMIT_REF_NAME
     url: http://$CI_ENVIRONMENT_SLUG.example.com
