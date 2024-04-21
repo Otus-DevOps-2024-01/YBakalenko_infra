@@ -18,7 +18,7 @@ build_job:
   stage: build
   script:
     - echo 'App deploy'
-    - start_app.sh &
+    - deploy_app.sh &
   environment:
     name: branch/$CI_COMMIT_REF_NAME
     url: http://$CI_ENVIRONMENT_SLUG.example.com
